@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#91e2ff"
+    android:padding="16dp"
+    tools:context=".InscriptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Image de l'activité -->
+        <ImageView
+            android:id="@+id/activiteImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/poney" /> <!-- Remplace par l’image adaptée -->
+
+
+        <!-- Titre de l'activité -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titre"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#024466"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Lieu -->
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lieu : "
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date :"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/activiteDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Une agréable promenade à poney dans les bois pour les enfants accompagnés. Casques fournis sur place."
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:background="#ffffff"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Bloc principal pour créneaux et inscription -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="8dp">
+
+            <!-- Label pour la liste déroulante -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choisissez un créneau"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <!-- Liste déroulante des créneaux -->
+            <Spinner
+                android:id="@+id/creneauSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="12dp" />
+
+            <!-- Nombre déjà inscrits -->
+            <TextView
+                android:id="@+id/nbInscritsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Déjà inscrits : 12 personnes"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+
+            <!-- Input nombre de participants -->
+            <EditText
+                android:id="@+id/nbParticipantsInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Nombre de participants à inscrire"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:background="@android:drawable/edit_text"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Bouton S'inscrire -->
+        <Button
+            android:id="@+id/participateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#FFFFFF"
+            android:text="S'inscrire"
+            android:textColor="#024466" />
+    </LinearLayout>
+</ScrollView>
