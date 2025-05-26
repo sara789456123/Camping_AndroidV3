@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Contenu scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image" />
+
+            <!-- Nom de l'activité -->
+            <TextView
+                android:id="@+id/tvNomAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom de l'activité"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Lieu -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lieu de l'activité :"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tvLieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camping Les Pins"
+                android:textSize="17sp"
+                android:layout_marginTop="4dp" />
+
+            <!-- Date et heure -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date et Heure :"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tvDateHeure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 août 2025 à 14h00"
+                android:textSize="17sp"
+                android:layout_marginTop="4dp" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description de l'activité :"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tvDescriptif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Une après-midi sportive au bord du lac."
+                android:textSize="17sp"
+                android:layout_marginTop="4dp" />
+
+            <!-- Nombre d'inscrits -->
+            <TextView
+                android:id="@+id/tvParticipants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Déjà 5 inscrits à cette activité"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginTop="24dp" />
+
+            <!-- Bouton -->
+            <Button
+                android:id="@+id/btnInscrire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="S'inscrire"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#009688"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:padding="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

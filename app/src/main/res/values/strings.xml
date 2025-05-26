@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Camping_AndroidV3</string>
+    <string name="activities_scroll_view_description">Liste des activités disponibles</string>
 </resources>
