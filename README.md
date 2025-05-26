@@ -10,8 +10,8 @@ Deconnexion OK
 
 Changement de page OK (pas de bouton retour en arriere faut le faire manuellement)
 
-Afficher les information de chaque activiter NON
+Afficher les information de chaque activiter OUI
 
-Ajouter une colone IMG dand BDD et api retourne NON
+Ajouter une colone IMG dand BDD et api retourne OUI
 
-Fonction Inscription Activiter séléctionner NON
+Fonction Inscription Activiter séléctionner OUI
